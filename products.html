@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ProductsPage</title>
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+
+    <link rel="stylesheet" href="./products.css" />
+  </head>
+  <body>
+    <header id="headerWrapper">
+      <div class="Topbar_LeftMenu">
+        <div class="Topbar_LogoWrapper">
+          <img
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt="Logo"
+          />
+          <p class="Topbar_BrandName">Kafene</p>
+        </div>
+        <nav>
+          <a class="Topbar_MenuItem" href="./orders.html">Orders</a >
+            <a class="Topbar_MenuItem Topbar_Active" href="#">Products</a>
+            <a class="Topbar_MenuItem" href="./user.html">Users</a>
+        </nav>
+      </div>
+      <a class="Topbar_MenuItem" id="logoutBtn" href="./index.html">Logout</a>
+    </header>
+
+    <main id="MiddleContainerWrapper">
+      <div class="ProductListingPage_PageWrapper">
+        <h1 class="ProductListingPage_MainHeading">Products</h1>
+        <div class="ProductListingPage_OrdersWrapper">
+          <div class="ProductListingPage_FilterWrapper">
+            <h3>Filters</h3>
+            <div class="ProductListingPage_FilterOptions">
+              <p id="countVal">Count: 100</p>
+              <label class="ProductListingPage_FilterCheckbox"
+                ><input
+                  id="productExpired"
+                  type="checkbox"
+                  name="product-expired"
+                  checked=""
+                />Expired</label
+              ><label class="ProductListingPage_FilterCheckbox"
+                ><input
+                  id="lowStock"
+                  type="checkbox"
+                  name="product-low-stock"
+                  checked=""
+                />Low Stock</label
+              >
+            </div>
+          </div>
+          <div class="ProductListingPage_OrderTableWrapper">
+            <table class="ProductListingPage_OrderTable">
+              <tbody>
+                <tr>
+                  <th>ID</th>
+                  <th>Product Name</th>
+                  <th>Product Brand</th>
+                  <th style="min-width: 100px">Expiry Date</th>
+                  <th>Unit Price</th>
+                  <th>Stock</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./products.js"></script>
+  </body>
+</html>

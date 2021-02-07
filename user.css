@@ -1,0 +1,62 @@
+.user-list-pageWrapper{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+}
+
+.userList-mainHeading{
+    margin: 0;
+}
+
+.userList-order-wrapper{
+    width: 100%;
+    padding: 24px 0;
+}
+
+.userList-filterWrapper{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.userList-search-box{
+    width: calc(100% - 100px);
+    padding: 12px 24px;
+    font-size: 15px;
+    border: 0;
+    border-bottom: 2px solid #8c8c8c;
+    margin: 0 36px 0 0;
+    outline: none;
+}
+
+.userList-button{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 14px 36px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #20b883;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#userList{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* #userList > tr{
+    margin-bottom: 10px;
+} */
+
+tr>td{
+    background-color: #fff;
+    border-bottom: 4px solid #f6f7fb;
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}

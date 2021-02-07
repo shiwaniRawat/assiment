@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./user.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="headerWrapper">
+        <div class="Topbar_LeftMenu">
+          <div class="Topbar_LogoWrapper">
+            <img
+              src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+              alt="Logo"
+            />
+            <p class="Topbar_BrandName">Kafene</p>
+          </div>
+          <nav>
+            <a class="Topbar_MenuItem" href="./orders.html">Orders</a >
+              <a class="Topbar_MenuItem Topbar_Active" href="./products.html">Products</a>
+              <a class="Topbar_MenuItem" href="./user.html">Users</a>
+          </nav>
+        </div>
+        <a class="Topbar_MenuItem" id="logoutBtn" href="./index.html">Logout</a>
+    </header>
+    <main id="main-container " style="margin-top: 80px;">
+        <div class="user-list-pageWrapper">
+            <h1 class="userList-mainHeading">Users</h1>
+            <div class="userList-order-wrapper">
+                <!-- form starts -->
+                <form class="userList-filterWrapper">
+                    <input class="userList-search-box" type="text" id="myInput" onkeyup="searchFun()"  placeholder="Search by Name">
+                    <input type="reset" id="null-btn" class="userList-button" value="Reset">
+                </form>
+                <!-- form ends -->
+                <!-- user list container -->
+                <div style="width:100%;">
+                    <table id="userList">
+                        <tr><th>ID</th><th>User Avatar</th><th>Full Name</th><th style="min-width: 100px;">DoB</th><th>Gender</th><th>Current Location</th></tr>
+                        <tbody id="data-user">
+                           
+                        </tbody>
+                    </table>
+                </div>
+                <!-- user list container -->
+            </div>
+        </div>
+    </main>
+
+    <script src="./user.js"></script>
+    <script src="../Method/commonMethod.js"></script>
+</body>
+</html>

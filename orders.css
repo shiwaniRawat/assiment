@@ -1,0 +1,123 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    background-color: #f6f7fb;
+}
+
+form, input, option, select, textarea {
+    font-family: "Poppins",sans-serif;
+}
+table > tr {
+    vertical-align: middle;
+}
+#headerWrapper{
+    width: 100%;
+    padding: 0 48px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px #ccc;
+    background-color: #fff;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+} 
+.Topbar_LeftMenu{
+    display: flex;
+    align-items: center;
+} 
+.Topbar_LogoWrapper{
+    display: flex;
+    align-items: center; 
+    margin-right: 36px;
+} 
+
+.Topbar_LogoWrapper >img{
+    width: 24px;
+height: 28px;
+margin-right: 8px;
+}
+
+.Topbar_BrandName{
+    font-size: 24px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin: 0;
+    color: rgba(0,0,0,.8);
+} 
+
+.Topbar_MenuItem{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+    padding: 24px 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    margin: 0 10px;
+} 
+.Topbar_Active{
+    color: #20b883;
+    border-bottom: 3px solid #20b883;
+} 
+#MiddleSectionWrapper{
+    margin-top: 100px;
+}
+.Homepage_PageWrapper{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+} 
+.Homepage_MainHeading{
+    margin: 0;
+}
+.Homepage_OrdersWrapper{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 24px 0;
+} 
+.Homepage_FilterWrapper{
+    width: 180px;
+} 
+.Homepage_FilterWrapper h3 {
+    margin: 0;
+} 
+.Homepage_FilterOptions{
+    display: flex;
+    flex-direction: column;
+} 
+.Homepage_FilterCheckbox{
+    margin: 6px 0;
+    cursor: pointer;
+} 
+.Homepage_FilterCheckbox input {
+    margin-right: 12px;
+}
+.Homepage_OrderTable{
+    width: 100%;
+    border-collapse: collapse;
+}
+table > tr {
+    vertical-align: middle;
+} 
+.Homepage_OrderTable th , .Homepage_OrderTable td {
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+} 
+.Homepage_TableRow td {
+    background-color: #fff;
+    border-bottom: 4px solid #f6f7fb;
+} 
+.Homepage_SecondaryText{
+    color: #8c8c8c;
+}
+.Homepage_PrimaryText{
+    color: rgba(0,0,0,.8);
+    font-weight: 500;
+}
