@@ -3,7 +3,7 @@ body{
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
+//font family for all
 form, input, option, select, textarea {
     font-family: "Poppins",sans-serif;
 }
