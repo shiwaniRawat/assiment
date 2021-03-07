@@ -13,7 +13,7 @@ $(document).ready(function () {
 
     let count = 0;
 
-
+// table
     const ProductTableRow = (data) => {
         var trWrapper = document.createElement('tr');
         trWrapper.classList.add('ProductListingPage_TableRow');
